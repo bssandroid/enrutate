@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="180dp"
+    android:background="@drawable/appwidget_dark_bg" >
+
+    <LinearLayout
+        android:id="@+id/lyOptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="5dp"
+        android:divider="@drawable/vertical"
+        android:orientation="vertical"
+        android:showDividers="middle" >
+
+        <ImageView
+            android:id="@+id/btnTravel"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="1"
+            android:src="@drawable/icono_trazarruta" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:alpha="0.3"
+            android:background="#c3c3c3" />
+
+        <ImageView
+            android:id="@+id/btnStations"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/icono_estaciones_menu" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:alpha="0.3"
+            android:background="#c3c3c3" />
+
+        <ImageView
+            android:id="@+id/btnRoutes"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_infomio" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView1"
+        android:layout_alignTop="@+id/lyOptions"
+        android:layout_toRightOf="@+id/lyOptions" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="16dp"
+            android:text="Noticias"
+            android:textColor="#c3c3c3"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="0.5dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="5dp"
+            android:alpha="0.3"
+            android:background="#c3c3c3" />
+
+        <TextView
+            android:id="@+id/textNews"
+            android:layout_width="253dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView1"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="4dp"
+            android:clickable="true"
+            android:ellipsize="end"
+            android:lines="3"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="#Atención se implementan desvios, coger rutas alternas en san bosco P27D, T31, que te acercarán a tu destino"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_above="@+id/textView2"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:alpha="0.3"
+            android:layout_marginRight="16dp"
+            android:background="#c3c3c3" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textNews"
+            android:layout_marginTop="8dp"
+            android:clickable="true"
+            android:ellipsize="end"
+            android:lines="3"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="#Atención se implementan desvios, coger rutas alternas en san bosco P27D, T31, que te acercarán a tu destino"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

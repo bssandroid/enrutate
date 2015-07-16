@@ -1,0 +1,18 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/fondoinformacion" >
+
+ 
+	    
+	<android.support.v4.view.ViewPager
+	    android:id="@+id/pagerintegracion"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent">
+
+
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

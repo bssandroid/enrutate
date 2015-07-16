@@ -1,0 +1,142 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.enrutatemio"
+    android:versionCode="20"
+    android:versionName="3.6" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="21" />
+
+    <permission
+        android:name="com.enrutatemio.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+   
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/inicio"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/Theme.Sherlock.Light.DarkActionBar" >
+        <activity
+            android:name="com.enrutatemio.actividades.SplashSecundarioActivity"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Transparent" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.enrutatemio.actividades.AlimentadoresActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/main"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.enrutatemio.actividades.PuntosRecargaActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.enrutatemio.actividades.ParadasActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.enrutatemio.actividades.InfoRutasActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.enrutatemio.actividades.WebViewClientDemoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:noHistory="true"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.enrutatemio.actividades.Integracion"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.enrutatemio.fragmentos.FragmentChangeActivity"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+           
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.enrutatemio.actividades.PreferenciasFragment"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:exported="true"
+            android:label="Preferencias"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock.Light.DarkActionBar" >
+        </activity>
+        <activity
+            android:name="com.enrutatemio.actividades.NoticiasTwitter"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:label="Noticias"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock.Light.DarkActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="enrutatemio"
+                    android:scheme="oauth" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.enrutatemio.servicios.ServicioNoticias" >
+        </service>
+        <service android:name="com.enrutatemio.servicios.ServicioTwitter" >
+        </service>
+
+        <receiver android:name="com.enrutatemio.servicios.BootCompleted" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+    	<!--<receiver android:name="com.enrutatemio.widget.WidgetEnrutateMio" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_enrutate" />
+        </receiver>-->
+	 <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/key_debug" />
+    </application>
+
+</manifest>

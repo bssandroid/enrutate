@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/header12"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textoalimentadores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/degradado"
+            android:gravity="center"
+            android:text="Rutas Alimentadoras"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" 
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/footerest1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="#000"
+        android:gravity="center_horizontal"
+        android:text="Pulsa sobre una ruta, para más información"
+        android:textColor="#ffffff"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/header12" />
+
+    <EditText
+        android:id="@+id/filtroalimentadores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/spinner1"
+        android:ems="10"
+        android:singleLine="true"
+        android:hint="Buscar ruta..." >
+
+      
+    </EditText>
+
+    <ListView
+        android:id="@+id/listaalimentadores"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/footerest1"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/filtroalimentadores" 
+         android:background="#F0F0F0"
+           android:divider="@null"
+       
+        android:cacheColorHint="@android:color/transparent">
+
+    </ListView>
+
+</RelativeLayout>

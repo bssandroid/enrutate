@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="zonas">
+        <item>Todas</item>
+        <item>Zona Centro</item>
+        <item>Zona Norte</item>
+        <item>Zona Sur</item>
+        <item>Zona Oriente</item>
+        <item>Zona Occidente</item>
+    </string-array>
+    <string-array name="lista">
+        <item>15 min</item>
+        <item>30 min</item>
+        <item>1 Hora</item>
+        <item>3 Horas</item>
+        <item>6 Horas</item>
+        <item>12 Horas</item>
+        <item>1 Día</item>
+    </string-array>
+    <string-array name="lista_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+</resources>

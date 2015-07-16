@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/degradado"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textotwitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="23dp"
+        android:gravity="center_horizontal"
+        android:text="@string/mensajetwitter"
+        android:textColor="#fff"
+        android:textSize="22sp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/img_twitter_pro" />
+
+    <LinearLayout
+        android:id="@+id/layoutbotontwitter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textotwitter"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal" >
+
+        <ImageView
+            android:id="@+id/metrocali"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/boton_metrocali" />
+
+        <ImageView
+            android:id="@+id/transito"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/boton_transito" />
+    </LinearLayout>
+
+</RelativeLayout>

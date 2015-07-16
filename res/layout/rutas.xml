@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textorutas"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/degradado"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/filtro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textorutas"
+        android:ems="10"
+        android:singleLine="true"
+        android:text=""
+        android:hint="@string/buscarruta" />
+
+    <ListView
+        android:id="@+id/listarutas"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/footerrutas"
+        android:layout_below="@+id/filtro"
+        android:background="#F0F0F0"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@null"
+         >
+    </ListView>
+
+    <TextView
+        android:id="@+id/footerrutas"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="#000"
+        android:gravity="center_horizontal"
+        android:text="@string/inforuta"
+        android:textColor="#ffffff"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

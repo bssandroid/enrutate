@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/principalLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/layoutrutas"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp" >
+
+            <ImageView
+                android:id="@+id/logorutas"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/busexpreso" />
+
+            <TextView
+                android:id="@+id/labelruta"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/logorutas"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@+id/logorutas"
+                android:text="P14A"
+                android:textColor="#214868"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/trayecto"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/labelruta"
+                android:layout_below="@+id/labelruta"
+                android:paddingTop="5dp"
+                android:singleLine="true"
+                android:text="shbshvsjgvsgj"
+                android:textColor="#6B6B6B"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/View01"
+                android:layout_width="100dp"
+                android:layout_height="0.5dp"
+                android:layout_alignLeft="@+id/trayecto"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="#CACACA" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/containerInfo"
+            android:layout_width="fill_parent"
+            android:layout_height="290dp"
+            android:layout_weight="8.46"
+            android:background="@null"
+            android:visibility="gone" >
+
+            <RelativeLayout
+                android:id="@+id/layoutInfo"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/background_info_ruta" >
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/containerInfo2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible" >
+
+                <RelativeLayout
+                    android:id="@+id/layoutInfo2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible" >
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="32dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_horizontal|bottom"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/textView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="0dp"
+                            android:text="HORARIO"
+                            android:textColor="#FFF"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="55dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/linearLayout1"
+                        android:gravity="center_horizontal|center_vertical" >
+
+                        <TextView
+                            android:id="@+id/horarioRuta"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="L-V: 5:00 a.m - 11:00 p.m S: 12 a.m - 11 p.m D/F: No Disponible"
+                            android:textColor="#FFF"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/di"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginRight="32dp"
+                            android:text="SELECCIONA EL SENTIDO"
+                            android:textColor="#FFF"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/linearLayout2"
+                        android:layout_marginTop="8dp" >
+
+                        <Button
+                            android:id="@+id/sentidoNorteSur"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:background="@drawable/boton_sentido"
+                            android:ellipsize="end"
+                            android:gravity="left|center_vertical"
+                            android:maxLines="2"
+                            android:paddingLeft="32dp"
+                            android:text="DE: estación chiminangos \n A: estación universidades"
+                            android:textColor="#FFF"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/di"
+                        android:layout_width="300dp"
+                        android:layout_height="2dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/linearLayout3"
+                        android:background="@drawable/list_divider" />
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout5"
+                        android:layout_width="fill_parent"
+                        android:layout_height="76dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/linearLayout4"
+                        android:layout_marginTop="8dp"
+                        android:paddingBottom="16dp" >
+
+                        <Button
+                            android:id="@+id/sentidoSurNorte"
+                            android:layout_width="fill_parent"
+                            android:layout_height="60dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:background="@drawable/boton_sentido"
+                            android:ellipsize="end"
+                            android:gravity="left|center_vertical"
+                            android:maxLines="2"
+                            android:paddingLeft="32dp"
+                            android:text="DE: estación chiminangos \n A: estación universidades"
+                            android:textColor="#FFF"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</RelativeLayout>

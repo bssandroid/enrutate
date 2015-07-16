@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello"></string>
+    <string name="app_name">Enrútate Mio</string>
+    <string name="main"></string>
+    <string name="tab2"></string>
+    <string name="tab3"></string>
+    <string name="tab1_content"></string>
+    <string name="tab2_content"></string>
+    <string name="tab3_content"></string> 
+    <string name="acceso_internet">Debes tener acceso a Internet</string>
+    <string name="limpiar">Limpiar</string>
+    <string name="limpiarpregunta">¿Deseas limpiar el mapa?</string>
+    <string name="buscarconvenciones">Ten en cuenta las siguientes convenciones a la hora de buscar una parada o estación: calle, cra, cl, carrera</string>
+    <string name="buscarparadaestacion">Buscar parada, estación o dirección </string>
+    <string name="esperar">por favor espera...</string>
+    <string name="sitioscercanos">Sitios cercanos</string>
+    <string name="cargandoinformacion">Cargando información</string>
+    <string name="tutorial">Tutorial</string>
+    <string name="vertutorial">BIENVENIDO, ¿Deseas ver el tutorial?</string>
+    <string name="buscando">Buscando...</string>
+    <string name="resultadobusqueda">Resultados de busqueda</string>
+    <!--<string name="xid">client_id=OZ1ET3SZYXJOWSUEG4LK3UGVPUGQCJNANB1V2BBHKV0GBB1Q</string>
+    <string name="xsec">client_secret=NLPLUMK4MQOGOTVC3A3ZLQ3NPCETNHOFSYOCHAI2ZPN4SCN2</string>-->
+    <string name="xid">client_id=C5GPXVLBYWXFSN4ZCEPGRPAZXJETY0HNM5R4VX3XFH014Q3G</string>
+    <string name="xsec">client_secret=OBBLG32GB4DYRYBQOM5G504V0M03WSLVTQ0FDZVZDXJDDDO2</string>
+    <string name="foursquare_api_url">https://api.foursquare.com/v2/venues/search?ll=</string>
+    <string name="msg_consultando_fsq">Consultando Foursquare...</string>
+    <string name="title_sitios_cercanos">Sitios cercanos</string>
+    <string name="err_carga_sitios_cercanos">Error cargando sitios cercanos</string>
+    <string name="no_hay_sitios_cercanos">No hay sitios cercanos disponibles</string>
+    <string name="cerca_a">Cercanos a:</string>
+    <string name="pesronas_aqui">Personas aquí:</string>
+    <string name="unidad_medida_distance">m</string>   
+    <string name="direccion_no_disponible">Dirección no disponible</string>  
+    <string name="siguenos">Siguenos en </string>
+    <string name="jeisonmolina">Jeison Molina </string>
+    <string name="juanbernal">Juan Martín Bernal </string>
+    <string name="desarrollado">App desarrollada por: </string>
+    <string name="copyright">Copyright 2012. Todos los derechos reservados </string>
+    <string name="metrocali">Metrocali</string>
+    <string name="transito">Transito</string>
+    <string name="taxis">Taxis Libres los 4</string>
+    <string name="destinoduplicado">Destino duplicado</string>
+   
+    <string name="mensajesalir">¿Deseas salir de enrútate Mio?</string>
+    <string name="modosintegracion">Ver modos de integración</string>
+    <string name="buscar">Buscar</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="salir">Salir</string>
+    <string name="noticiacompleta">Toca sobre cada noticia, para verla completa</string>
+    <string name="entrar">Entrar</string>
+   
+    <string name="verruta">Ver ruta</string>
+    <string name="buscarruta">Buscar Ruta...</string>
+    <string name="inforuta">Pulsa sobre una ruta, para más información</string>
+    <string name="planear_viaje">Planear viaje </string>
+    <string name="informacionrutas">Información de Rutas</string>
+    <string name="informacionadicional">Información adicional</string>
+    <string name="key_release">AIzaSyCJKhIEuAQoYt0z5bi0tLyTKNULOxfU-VQ</string>
+    <string name="key_debug">AIzaSyDMu1FnhFs7ErsxWo5_gj6ev1q-SRFJHOU</string>
+    <string name="mensajetwitter">¡Sigue a Metrocali y el Tránsito en Twitter! \n Matente informado de las últimas noticias \n sobre la movilidad en Cali.</string>
+     <string name="acercade">Jeison Molina \n Juan Martín Bernal \n Carlos Castaño \n Edwin Ospina \n </string>
+    <string-array name="stations_array">
+		<item>Amanecer</item>
+		<item>Álamos</item>
+		<item>Atanasio Girardot</item>
+		<item>Belalcazar</item>
+		<item>Buitrera</item>
+		<item>Caldas</item>
+		<item>Capri</item>
+		<item>Centro</item>
+		<item>Chapinero</item>
+		<item>Chiminangos</item>
+		<item>Cien Palos</item>
+		<item>Conquistadores</item>
+		<item>Estación Nuevo Latir</item>
+		<item>Estadio</item>
+		<item>Fátima</item>
+		<item>Flora industrial</item>
+		<item>Floresta</item>
+		<item>Fray Damián</item>
+		<item>La Ermita</item>
+		<item>Las américas</item>
+		<item>Lido</item>
+		<item>Manzana del Saber</item>
+		<item>Manzanares</item>
+		<item>Melendez</item>
+		<item>Pampalinda</item>
+		<item>Petecuy</item>
+		<item>Piloto</item>
+		<item>Plaza Caycedo</item>
+		<item>Plaza de Toros</item>
+		<item>Popular</item>
+		<item>Prados del norte</item>
+		<item>Primitivo</item>
+		<item>Refugio</item>
+		<item>Salomia</item>
+		<item>San Bosco</item>
+		<item>San nicolás</item>
+		<item>San Pedro</item>
+		<item>Santa Librada</item>
+		<item>Santa Mónica</item>
+		<item>Santa Rosa</item>
+		<item>Siete de Agosto</item>
+		<item>Sucre</item>
+		<item>Tequendama</item>
+		<item>Terminal Andrés Sanín</item>
+		<item>Terminal Cañaveralejo</item>
+		<item>Terminal Menga</item>
+		<item>Torre de Cali</item>
+		<item>Trebol</item>
+		<item>Troncal Unida</item>
+		<item>Unidad deportiva</item>
+		<item>Univalle</item>
+		<item>Universidades</item>
+		<item>Versalles</item>
+		<item>Villa Colombia</item>
+		<item>Villa Nueva</item>
+		<item>Vipasa</item>
+    </string-array>
+</resources>

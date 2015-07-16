@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="72dp" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="72dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="72dp"
+        android:paddingRight="16dp"
+        android:gravity="center_vertical" >
+      
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/tv_distance"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="el portal de belen ihedjhdfhvjgfvdjgv dvfjgdvjfgvdjgvfjgdv"
+            android:textColor="#214868"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/tv_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp"
+            android:text="cra 33 a ·dbhbd fugvdfjgdv dgvfdjgvfgj fdgvjgfvdjg gfvdjgvfg"
+            android:maxLines="2"
+            android:textColor="#57697d"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tv_name"
+            android:text="15m"
+            android:textColor="#57697d"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/image_site_foursquare"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_launcher" />
+
+</RelativeLayout>

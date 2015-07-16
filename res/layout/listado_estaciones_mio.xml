@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutnoticiasid"
+    android:layout_width="fill_parent"
+    android:layout_height="72dp" >
+
+    <RelativeLayout
+        android:id="@+id/rela"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/fechanoticia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/noticiasmensaje"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="4dp"
+            android:singleLine="true"
+            android:text=""
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/noticiasmensaje"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/fechanoticia"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text=""
+            android:textColor="#214868"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/linearimageestacion"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:gravity="center_vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/imagenNoticia"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/iconoestacionmapa" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+       
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="#CACACA" />
+
+</RelativeLayout>

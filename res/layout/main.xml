@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <fragment
+        android:id="@+id/mapviewvdos"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/footermap"
+        class="com.google.android.gms.maps.SupportMapFragment" />
+
+    <View
+        android:id="@+id/shadow"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/drop_shadow_top"
+        android:orientation="horizontal" >
+    </View>
+
+    <LinearLayout
+        android:id="@+id/footermap"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/anysite"
+        android:background="#CAffffff"
+        android:clickable="true"
+        android:orientation="horizontal"
+         >
+
+        <Button
+            android:id="@+id/vermas"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0"
+            android:background="?attr/selectableItemBackground"
+            android:drawableLeft="@drawable/more"
+            android:gravity="center_horizontal|center_vertical"
+            android:paddingLeft="10dp"
+            android:text=""
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textobienvenida"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_gravity="center_vertical"
+            android:text="Haz clic sobre el mapa para empezar"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/anysite"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="#CAffffff"
+        android:clickable="true"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal"
+        android:visibility="invisible" >
+
+        <Button
+            android:id="@+id/nearbystations"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:drawableLeft="@drawable/iconoestacionmapa"
+            android:gravity="center_horizontal|center_vertical"
+            android:paddingLeft="5dp"
+            android:text="Paradas cercanas"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/drop_shadow_bottom" />
+
+        <Button
+            android:id="@+id/puntoRecargamio"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:drawableLeft="@drawable/iconotarjetarecarga"
+            android:gravity="center_horizontal|center_vertical"
+            android:paddingLeft="2dp"
+            android:text="Puntos de recarga"
+            android:textSize="13sp" />
+
+        <View
+            android:id="@+id/ViewColorPickerHelper"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dip"
+            android:layout_marginRight="13dp"
+            android:layout_marginTop="4dip"
+            android:background="@drawable/drop_shadow_bottom" />
+
+        <ImageView
+            android:id="@+id/nearbysites"
+            android:layout_width="26dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="6dp"
+            android:layout_weight="0.29"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:padding="5dp"
+            android:src="@drawable/foursquare_btn" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/shadow2"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_above="@+id/footermap"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/drop_shadow_bottom"
+        android:orientation="horizontal" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_above="@+id/shadow2"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="12dp" >
+
+        <ImageView
+            android:id="@+id/changeMap"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:alpha="0.8"
+            android:scaleType="centerCrop"
+            android:src="@drawable/satelite" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_above="@+id/limpiaMapaTodo"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="14dp"
+        android:layout_marginRight="12dp"
+        android:alpha="0.6"
+        android:background="@drawable/circulos"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignLeft="@+id/view2"
+        android:layout_alignTop="@+id/relativeLayout1"
+        android:alpha="0.6"
+        android:background="@drawable/circulos"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/limpiarMap"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_alignLeft="@+id/limpiaMapaTodo"
+        android:layout_alignTop="@+id/view2"
+        android:layout_marginTop="5dp"
+        android:clickable="true"
+        android:src="@drawable/iconomapa"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/limpiaMapaTodo"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_alignBottom="@+id/relativeLayout1"
+        android:layout_alignRight="@+id/view1"
+        android:layout_marginRight="7dp"
+        android:clickable="true"
+        android:src="@drawable/limpiar"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/contenedortutorial"
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:alpha="0.8"
+        android:background="@drawable/degradotutorial"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal" 
+            >
+
+            <TextView
+                android:id="@+id/textotutorial"
+                android:layout_width="fill_parent"
+                android:layout_height="110dp"
+                android:layout_above="@+id/omitirtutorial"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="5dp"
+                android:layout_toLeftOf="@+id/imagentutorial"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="En este tutorial, te guiaremos para que planifiques tu viaje. \n \n  para empezar toca sobre el icono para ubicarte en el mapa."
+                android:textColor="#fff"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/omitirtutorial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:clickable="true"
+                android:gravity="right"
+                android:paddingBottom="7dp"
+                android:paddingRight="12dp"
+                android:text="Omitir tutorial"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imagentutorial"
+                android:layout_width="50dp"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/pos_tuto"
+                 />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/change_travel"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_above="@+id/view2"
+        android:layout_alignLeft="@+id/view2"
+        android:layout_marginBottom="5dp"
+        android:clickable="true"
+        android:src="@drawable/new_msg_widget_ico"
+        android:visibility="gone" />
+
+	 <LinearLayout
+        android:id="@+id/container_steps"
+        android:layout_width="166dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/shadow"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ver_recorrido_btn"
+        android:visibility="gone"
+        android:gravity="center_horizontal"
+        
+        android:orientation="vertical" >
+
+	     <TextView
+	         android:id="@+id/textView1"
+	         android:layout_width="match_parent"
+	         android:layout_height="wrap_content"
+	         android:gravity="center_horizontal"
+	         android:layout_marginTop="26dp"
+	         android:text="Ver recorrido"
+	         android:textColor="#fff"
+	         android:textSize="16sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

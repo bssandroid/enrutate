@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/principalLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="74dp" >
+
+    <RelativeLayout
+        android:id="@+id/conteinerParada"
+        android:layout_width="fill_parent"
+        android:layout_height="74dp" >
+
+        <ImageView
+            android:id="@+id/imagenParada"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/flecha_contratante" >
+        </ImageView>
+
+        <RelativeLayout
+            android:id="@+id/hgg"
+            android:layout_width="fill_parent"
+            android:layout_height="74dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="60dp"
+            android:paddingRight="16dp" >
+
+            <View
+                android:id="@+id/View01"
+                android:layout_width="100dp"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:background="#CACACA" />
+
+            <TextView
+                android:id="@+id/direccionParada"
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="#6B6B6B"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/nombreParada"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_above="@+id/direccionParada"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+                android:ellipsize="end"
+                android:gravity="bottom"
+                android:maxLines="2"
+                android:text=""
+                android:textColor="#214868"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

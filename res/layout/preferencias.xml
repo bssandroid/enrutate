@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="preferencianoticias"
+        android:summary="Encendido/apagado"
+        android:title="Notificación de noticias" />
+    
+     <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="notificationsounds"
+        android:summary="Encendido/apagado"
+        android:title="Notificaciones sonoras" />
+    
+     <ListPreference
+        android:defaultValue="3"
+        android:dialogTitle="Tiempo"
+        android:entries="@array/lista"
+        android:entryValues="@array/lista_values"
+        android:key="sincronizacion"
+        android:summary="1 Hora"
+        android:title="Periodo de tiempo consulta noticias" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="preferenciavibracion"
+        android:summary="Encendido/apagado"
+        android:title="Vibración" />
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="tutorial"
+        android:summary="No mostrar tutorial"
+        android:title="Tutorial" />
+
+</PreferenceScreen>

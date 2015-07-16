@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/texto1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/degradado"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+    <TextView
+        android:id="@+id/texto2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/degradadodos"
+        android:gravity="center_horizontal"
+        android:text=""
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textColor="#FFFFFF"
+        android:textSize="19sp" />
+
+    <ListView
+        android:id="@+id/ListView02"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true"
+       
+        android:fastScrollEnabled="true"
+        >
+    </ListView>
+
+</LinearLayout>

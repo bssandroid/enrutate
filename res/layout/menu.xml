@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <item android:id="@+id/icon"
+         android:title="Acerca de"
+        android:icon="@android:drawable/ic_dialog_info" />
+ <!--   <item android:id="@+id/text"
+        android:title="Tutorial"
+        android:icon ="@android:drawable/ic_dialog_email"  
+         android:visibility="gone"    /> --> 
+    <item android:id="@+id/icontext"
+        android:title="Noticias"
+        android:icon ="@android:drawable/ic_menu_today"/>
+</menu>

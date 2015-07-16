@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutnoticiasid"
+    android:layout_width="fill_parent"
+    android:layout_height="90dp" >
+
+    <RelativeLayout
+        android:id="@+id/linearimageestacion"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rela"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_alignLeft="@+id/separator"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/noticiasmensaje"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="bottom"
+            android:paddingBottom="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#214868"
+            android:textSize="24sp" />
+
+    </RelativeLayout>
+
+  
+
+    <ImageView
+        android:id="@+id/imagenNoticia"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_above="@+id/separator"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/linearimageestacion"
+        android:src="@drawable/iconoestacionmapa" />
+
+    <TextView
+        android:id="@+id/fechanoticia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rela"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/rela"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="5dp"
+        android:paddingLeft="5dp"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="#6B6B6B"
+        android:textSize="18sp" />
+
+</RelativeLayout>
